@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom right, rgb(75, 255, 255), rgb(13, 35, 95));
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+
+}
+
+nav {
+    background: black;
+    width: 100%;
+    color: white;
+    position: fixed;
+    overflow: hidden;
+    padding: 20px 20px;
+    font-size: 18px;
+}
+
+.main-nav-text {
+    text-transform: uppercase;
+    float: left;
+}
+.main-nav-text:hover{
+    color: rgb(25, 187, 187);
+}
+.creator{
+    /* text-transform: uppercase; */
+    float: right;
+}
+
+.element-1 {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.random-number-generator {
+    padding: 10px;
+    background: rgba(31, 28, 14, 0.562);
+    max-width: 800px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px 10px rgba(0,0,0,.2);
+}
+
+.inputs {
+    display: flex;
+}
+
+.text-box-body {
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.box {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.guiding-text {
+    width: 80px;
+    padding: 6px;
+    align-items: center;
+    color: white;
+}
+
+.text-box {
+    border: 0px transparent;
+    margin-right: 10px;
+    border-radius: 4px;
+    padding: 6px;
+    width: 60%;
+    height: 30px;
+    align-items: center;
+    outline: none;
+}
+
+.input-button-body {
+    display: flex;
+    justify-content: center;
+}
+
+.input-button {
+    border: 0px transparent;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.349);
+    color: white;
+    padding: 5px;
+    font-size: 10px;
+    text-transform: uppercase;
+    height: 65px;
+    width: 65px;
+    outline: none;
+}
+
+.input-button:active {
+    background: rgba(0, 0, 0, 0.616);
+    
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  	-webkit-appearance: none; 
+	appearance: none;
+	margin: 0; 
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+#result {
+    margin-top: 8px;
+    padding: 5px;
+    border-radius: 4px;
+    color: white;
+    background: rgba(0, 0, 0, 0.349);
+}
