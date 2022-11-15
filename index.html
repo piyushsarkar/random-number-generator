@@ -3,39 +3,40 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>Random Number Generator</title>
 </head>
 
 <body>
-    <nav>
-        <div class="main-nav-text">
-            Random Number Generator
-        </div>
-        <div class="creator">
-            Created By: Piyush Sarkar
-        </div>
-    </nav>
-    <div class="element-1">
-        <div class="random-number-generator">
-            <div class="inputs">
-                <div class="text-box-body">
-                    <div class="box">
-                        <span class="guiding-text">FROM</span>
-                        <input type="number" class="text-box" id="minval" value="1">
+    <header>
+        <h1>Random Number Generator</h1>
+    </header>
+    <main>
+        <div class="card">
+            <div class="input">
+                <div class="input__text">
+                    <div class="input_group">
+                        <label for="minval">From</label>
+                        <input type="number" id="minval" value="1">
                     </div>
-                    <div class="box">
-                        <span class="guiding-text">TO</span>
-                        <input type="number" class="text-box" id="maxval" value="100">
+                    <div class="input_group">
+                        <label for="maxval">To</label>
+                        <input type="number" id="maxval" value="100">
                     </div>
                 </div>
-                <div class="input-button-body">
-                    <input type="button" class="input-button" value="Generate" onclick="getRandomNumber()">
-                </div>
+                <input class="input__button" type="button" value="Generate" onclick="getRandomNumber()">
             </div>
-
-            <p id="result">&nbsp;</p>
+            <div class="output">
+                <span class="output__title">Random Number: </span>
+                <span id="result">Click Generate</span>
+            </div>
         </div>
-    </div>
+        <div class="attribution">
+            Made by <a href="https://github.com/piyushsarkar">Piyush</a>.
+          </div>
+    </main>
 
 </body>
 <script type="text/javascript" src="script.js"></script>
